@@ -5,82 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--link fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--link css-->
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
 </head>
 <body>
-    <!--Container prime 3 sezioni-->
-    <div class=".container-fluid">
-        <!--Sezione Header-->
-        <header class="ldv-bg-darkblue">
-            <div class="row justify-content-between">
-                <div class="col-4">
-                  Start Bootstrap
-                </div>
-                <div class="col-4 ms-auto">
-                  Menu Panino
-                </div>            
-        </header>
-        <!--Sezione Start Bootstrap-->
-        <section class="col text-center ldv-bg-lightgreen">
-            <div class="pt-5">
-                Immagine
+    <!--Sezione Header-->
+    <header class="ldv-bg-darkblue py-3 text-white">
+        <div class="container justify-content-between">
+           <!--Sezione navbar-->
+           <nav class="navbar navbar-expand-lg ldv-bg-darkblue">
+            <div class="container-fluid justify-content-between">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <h1 class="pt-4">
-                Start Bootstrap
-            </h1>
-            <div class="row pt-5">
-                <div class="text-uppercase pb-5">Graphic artist - web designer - illustrator</div>
-            </div>
-        </section>
-        <!--Sezione Portfolio-->
-        <section>
-            <h2 class="text-center text-uppercase pt-4">
-                Portfolio
-            </h2>
-            <div class="row gap-6 pb-5">
-                <div class="col-4">Foto</div>
-                <div class="col-4">Foto</div>
-                <div class="col-4">Foto</div>
-                <div class="col-4">Foto</div>
-                <div class="col-4">Foto</div>
-                <div class="col-4">Foto</div>
-            </div>
-        </section>
-        <!--Sezione About-->
-        <section class="ldv-bg-lightgreen">
-            <h2 class="text-center text-uppercase pt-4">
-                About
-            </h2>
-            <div class="row gap-2 pt-4 pb-5">
-                <div class="col ps-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non odit!
-                         Illo quis cupiditate aperiam quo libero voluptatibus quaerat molestias, a debitis! 
-                         Porro asperiores optio eaque nemo veniam, earum magni!
-                    </p>
-                </div>
-                <div class="col pe-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non odit!
-                        Illo quis cupiditate aperiam quo libero voluptatibus quaerat molestias, a debitis! 
-                        Porro asperiores optio eaque nemo veniam, earum magni!
-                   </p>
+          </nav>
+    </header>
+    <!--Sezione Start Bootstrap-->
+    <section class="pt-5 text-center ldv-bg-lightgreen">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <img src="img/avatar.svg" class="img-fluid" alt="Avatar">
                 </div>
             </div>
-        </section>
-        <!--Sezione Contact Me-->
-        <section>
-            <h2 class="text-center text-uppercase pt-4">
-                Contact me
-            </h2>
-            <div class="row gap-6">Name</div>
-            <div class="row gap-3">E-mail Address</div>
-            <div class="row gap-3">Phone Number</div>
-            <div class="row gap-3">Message</div>
-            <div class="row gap-3 mt-5 pe-6">Send</div>
-        </section>
-        <!--Sezione Contacts-->
-        <section class="ldv-bg-darkblue2">
+        </div>
+        <h1 class="pt-4 fs-1 fw-bold text-white text-uppercase">
+            Start Bootstrap
+        </h1>
+        <div class="container">
+            <div class="row justify-content-center fs-2 mt-5">
+                <div class="col-3 text-white" id="star">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4">
+            <div class="text-uppercase text-white pb-5">
+                <h3>Graphic artist - web designer - illustrator</h3>
+            </div>
+        </div>
+    </section>
+    <!--Sezione Portfolio-->
+    <section class="pb-5">
+        <h2 class="text-center fw-bold text-uppercase pt-4">
+            Portfolio
+        </h2>
+        <div class="container">
+            <div class="row justify-content-center fs-2 mt-5 ml-1">
+                <div class="col-3" id="star-b">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row g-2 mt-5">
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="content">
+                    <img src="img/cabin.png" class="rounded img-fluid" alt="Cabin">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="content">
+                    <img src="img/cake.png" class="rounded img-fluid" alt="cake">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="content">
+                    <img src="img/circus.png" class="rounded img-fluid" alt="Circo">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="content">
+                    <img src="img/game.png" class="rounded img-fluid" alt="Game">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="content">
+                    <img src="img/safe.png" class="rounded img-fluid" alt="Safe">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xxl-4">
+                <div class="content">
+                    <img src="img/submarine.png" class="rounded img-fluid" alt="Submarine">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Sezione About-->
+    <section class="ldv-bg-lightgreen">
+        <h2 class="text-center text-uppercase pt-4">
+            About
+        </h2>
+        <div class="row gap-2 pt-4 pb-5">
+            <div class="col ps-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non odit!
+                    Illo quis cupiditate aperiam quo libero voluptatibus quaerat molestias, a debitis!
+                    Porro asperiores optio eaque nemo veniam, earum magni!
+                </p>
+            </div>
+            <div class="col pe-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, non odit!
+                    Illo quis cupiditate aperiam quo libero voluptatibus quaerat molestias, a debitis!
+                    Porro asperiores optio eaque nemo veniam, earum magni!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Sezione Contact Me-->
+    <section>
+        <h2 class="text-center text-uppercase pt-4">
+            Contact me
+        </h2>
+        <div class="row gap-6">Name</div>
+        <div class="row gap-3">E-mail Address</div>
+        <div class="row gap-3">Phone Number</div>
+        <div class="row gap-3">Message</div>
+        <div class="row gap-3 mt-5 pe-6">Send</div>
+    </section>
+    <!--Sezione Contacts-->
+    <section class="ldv-bg-darkblue2">
         <div class="row gap-6 pt-4">
             <div class="col-4">
                 <h4 class="text-center text-uppercase">Location</h4>
@@ -92,15 +155,15 @@
                 <h4 class="text-center text-uppercase">About freelancer</h4>
             </div>
         </div>
-        </section>
-        <!--Sezione Copyright-->
-        <section class="ldv-bg-darkblue">
-            <div class="row text-center">
-                <div class="col">
-                    Copyright
-                </div>
+    </section>
+    <!--Sezione Copyright-->
+    <section class="ldv-bg-darkblue">
+        <div class="row text-center">
+            <div class="col">
+                Copyright
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </body>
+
 </html>
