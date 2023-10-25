@@ -16,25 +16,22 @@
     <header class="ldv-bg-darkblue py-3 text-white">
         <div class="container justify-content-between">
            <!--Sezione navbar-->
-           <nav class="navbar navbar-expand-lg ldv-bg-darkblue">
+           <nav class="navbar navbar-expand-lg ldv-bg-darkblue text-uppercase" data-bs-theme="dark">
             <div class="container-fluid justify-content-between">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand fw-bold" href="#">Start Bootstrap</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link active" href="#">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    <a class="nav-link active" href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -142,34 +139,74 @@
     </section>
     <!--Sezione Contact Me-->
     <section>
-        <h2 class="text-center text-uppercase pt-4">
+        <h2 class="text-center fw-bold text-uppercase pt-4">
             Contact me
         </h2>
-        <div class="row gap-6">Name</div>
-        <div class="row gap-3">E-mail Address</div>
-        <div class="row gap-3">Phone Number</div>
-        <div class="row gap-3">Message</div>
-        <div class="row gap-3 mt-5 pe-6">Send</div>
+        <div class="container">
+            <div class="row justify-content-center fs-2 mt-5 ml-1">
+                <div class="col-3" id="star-b">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center gap-6">
+                <div class="col-7">Name</div>
+            </div>
+            <div class="row justify-content-center gap-3">
+                <div class="col-7">E-Mail Address</div>
+            </div>
+            <div class="row justify-content-center gap-3">
+                <div class="col-7">Phone Number</div>
+            </div>
+            <div class="row justify-content-center gap-3">
+                <div class="col-7">Message</div>
+            </div>
+            <div class="row justify-content-center gap-3 mt-5 pe-6">
+                <div class="col-7">
+                    <button type="button" class="btn btn-light ldv-bg-lightgreen">Light</button>
+                </div>
+            </div>
+        </div>
     </section>
     <!--Sezione Contacts-->
     <section class="ldv-bg-darkblue2">
-        <div class="row gap-6 pt-4">
-            <div class="col-4">
-                <h4 class="text-center text-uppercase">Location</h4>
+        <div class="row justify-content-center gap-6 pt-4">
+            <div class="col-3 text-center text-white">
+                <h4 class="text-uppercase">Location</h4>
+                <span class="d-block">2215 John Daniel Drive Clark,</span>
+                <span class="d-block">MO 54243</span>
             </div>
-            <div class="col-4">
-                <h4 class="text-center text-uppercase">Around the web</h4>
+            <div class="col-3 text-center text-white">
+                <h4 class="text-uppercase">Around the web</h4>
+                <div class="row justify-content-center gap-2">
+                    <div class="col-1 pe-2 border border-light rounded-circle">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="col-1 border border-light rounded-circle">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </div>
+                    <div class="col-1 border border-light rounded-circle">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="col-1 border border-light rounded-circle">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                </div>
             </div>
-            <div class="col-4">
-                <h4 class="text-center text-uppercase">About freelancer</h4>
+            <div class="col-3 text-center text-white">
+                <h4 class="text-uppercase">About freelancer</h4>
+                <div>Freelance is a free to use, open source Bootstrap theme created by
+                    <span class="ldv-tc-lightgreen">Start Bootstrap</span>.
+                </div>
             </div>
         </div>
     </section>
     <!--Sezione Copyright-->
-    <section class="ldv-bg-darkblue">
+    <section class="ldv-bg-darkblue text-white fs-6 pt-4 pb-4">
         <div class="row text-center">
             <div class="col">
-                Copyright
+               <span>Copyright Your Website 2019</span> 
             </div>
         </div>
     </section>
